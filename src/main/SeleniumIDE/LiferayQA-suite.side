@@ -1,0 +1,1000 @@
+{
+  "id": "5ba4986d-5497-4053-80cb-3cde3aebf001",
+  "version": "2.0",
+  "name": "LiferayQA",
+  "url": "https://forms.liferay.com/web/forms/shared/-/form/122548",
+  "tests": [{
+    "id": "5674d4a3-fc84-4065-97bd-d6aedf2d8ecb",
+    "name": "Test Date of Birth - Invalid date (out of range)",
+    "commands": [{
+      "id": "ab01eddc-6fef-4cc0-8212-834d75296aaa",
+      "comment": "",
+      "command": "open",
+      "target": "https://forms.liferay.com/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c86e32af-2847-4f34-8850-5b2707e558fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "833x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6783b2ed-c67d-4a50-8357-1de82224e34e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbf11b50-02c1-4306-9161-1f9aa455c324",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='1_/__/____'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "1_/__/____"
+    }, {
+      "id": "0afd2ad9-7c32-41bf-9591-fa37d1f10e93",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='1_/__/____'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "9dc15557-bcbb-47d1-8ff2-431434545732",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-5",
+      "targets": [
+        ["css=.col-md-5", "css:finder"],
+        ["xpath=//div[@id='ddmFormCSgv3mjd']/div/div/div/div/div/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff4277a6-2b9e-4c3d-a1eb-e6c367545db2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormCSgv3mjd']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0472d156-54fb-496f-a693-ec74932e6e3c",
+      "comment": "Enter invalid date",
+      "command": "type",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='1_/__/____'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormCSgv3mjd']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "20/20/2022"
+    }, {
+      "id": "d8e93601-d00d-4b38-9cdb-2c7cb585a15e",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9a5ba7ad-76ef-4c93-9404-f2e0f63b4694",
+    "name": "Load New Hire page - Enter details (Normal)",
+    "commands": [{
+      "id": "eb85a226-9f52-4ce2-8e34-48ad1dc7f0c3",
+      "comment": "",
+      "command": "open",
+      "target": "/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ef91a32-373a-40b2-a36e-1239c84e8af1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "606b2770-3eef-4561-8c5b-49e41b48494d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "275501ee-2103-4107-b76f-2ee4d2acbb21",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jenny Lyn O. Ngo Gui - testing"
+    }, {
+      "id": "4a009f6f-61d0-4212-9aa2-f65bf85f40fb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa57510-93e5-4a14-b33e-b26cadf615a2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "a3d0e417-0f26-4de4-bedc-7bdf7b3c415b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here"
+    }, {
+      "id": "612db1fc-ebae-491a-9146-9c1a4c9bc7b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8a1137-a2d1-447d-9f1e-ef332f30b54f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here - testing normal case"
+    }, {
+      "id": "012b54da-e68f-4030-a3f6-0088f4dd3ba2",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a76bebd7-4e0a-4898-9022-212728082fdb",
+    "name": "Load New Hire page - Enter fields maxed out - 22000 chars",
+    "commands": [{
+      "id": "48a60a48-78ae-4a70-a719-5cd98807c452",
+      "comment": "",
+      "command": "open",
+      "target": "/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "355e866c-29ac-4bd9-b75a-fb301a7b5e32",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8528bf2d-4ecc-49c1-ab71-70c40137c137",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33602bed-72bc-499e-a0a7-d7efd7ebf8ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$AUoJiaU9$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$AUoJiaU9$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormk2bhGG69']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a056a902-9b60-4507-83f5-d032ee651235",
+      "comment": "Enter Name with 271 characters (testing beyond 255 characters)",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$eKNPZfl0$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$eKNPZfl0$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "abcdefghijklmnopqrstuvwxyz1abcdefghijklmnopqrstuvwxyz2abcdefghijklmnopqrstuvwxyz3abcdefghijklmnopqrstuvwxyz4abcdefghijklmnopqrstuvwxyz5abcdefghijklmnopqrstuvwxyz6abcdefghijklmnopqrstuvwxyz7abcdefghijklmnopqrstuvwxyz8 abcdefghijklmnopqrstuvwxyz9 abcdefghijklmnopqrstuvwxyz10"
+    }, {
+      "id": "b5a53d68-b624-4f6b-a6bc-d975b5c69002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2500e3-8f71-4c93-97b3-a6ebfec5f61f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "905b6d01-747c-4907-a4fb-043a8dc5e587",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2ec961-98bb-44d5-bbca-a85ff0ead3c0",
+      "comment": "22,000+ words test",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I think there are three ways in which those who write for children may approach their work; two good ways and one that is generally a bad way.\\n\\nI came to know of the bad way quite recently and from two unconscious witnesses. One was a lady who sent me the MS of a story she had written in which a fairy placed at a child’s disposal a wonderful gadget. I say ‘gadget’ because it was not a magic ring or hat or cloak or any such traditional matter. It was a machine, a thing of taps and handles and buttons you could press. You could press one and get an ice cream, another and get a live puppy, and so forth. I had to tell the author honestly that I didn’t much care for that sort of thing. She replied, ‘No more do I, it bores me to distraction. But it is what the modern child wants.’ My other bit of evidence was this. In my own first story I had described at length what I thought a rather fine high tea given by a hospitable faun to the little girl who was my heroine. A man, who has children of his own, said, ‘Ah, I see how you got to that. If you want to please grown-up readers you give them sex, so you thought to yourself, “That won’t do for children, what shall I give them instead? I know! The little blighters like plenty of good eating.” In reality, however, I myself like eating and drinking. I put in what I would have liked to read when I was a child and what I still like reading now that I am in my fifties.\\n\\nThe lady in my first example, and the married man in my second, both conceived writing for children as a special department of ‘giving the public what it wants’. Children are, of course, a special public and you find out what they want and give them that, however little you like it yourself.\\n\\nThe next way may seem at first to be very much the same, but I think the resemblance is superficial. This is the way of Lewis Carroll, Kenneth Graham; and Tolkien. The printed story grows out of a story told to a particular child with the living voice and perhaps ex tempore. It resembles the first way because you are certainly trying to give that child what it wants. But then you are dealing with a concrete person, this child who, of course, differs from all other children. There is no question of ‘children’ conceived as a strange species whose habits you have ‘made up’ like an anthropologist or a commercial traveller. Nor, I suspect, would it be possible, thus face to face, to regale the child with things calculated to please it but regarded by yourself with indifference or contempt. The child, I am certain, would see through that. In any personal relation the two participants modify each other. You would become slightly different because you were talking to a child and the child would become slightly different because it was being talked to by an adult. A community, a composite personality, is created and out of that the story grows.\\n\\nThe third way, which is the only one I could ever use myself, consists in writing a children’s story because a children’s story is the best art-form for something you have to say: just as a composer might write a Dead March not because there was a public funeral in view but because certain musical ideas that had occurred to him went best into that form. This method could apply to other kinds of children’s literature besides stories. I have been told that Arthur Mee never met a child and never wished to: it was, from his point of view, a bit of luck that boys liked reading what he liked writing. This anecdote may be untrue in fact but it illustrates my meaning.\\n\\nWithin the species ‘children’s story’ the sub-species which happened to suit me is the fantasy or (in a loose sense of that word) the fairy tale. There are, of course, other sub-species. E. Nesbit’s trilogy about the Bastable family is a very good specimen of another kind. It is .a ‘children’s story’ in the sense that children can and do read it: but it is also the only form in which E. Nesbit could have given us so much of the humours of childhood. It is true that the Bastable children appear, successfully treated from the adult point of view, in one of her grown-up novels, but they appear only for a moment. I do not think she would have kept it up. Sentimentality is so apt to creep in if we write at length about children as seen by their elders. And the reality of childhood, as we all experienced it, creeps out. For we all remember that our childhood, as lived, was immeasurably different from what our elders saw. Hence Sir Michael Sadler, when I asked his opinion about a certain new experimental school, replied, ‘I never give an opinion on any of those experiments till the children have grown up and can tell us what really happened.’ Thus the Bastable trilogy, however improbable many of its episodes may be, provides even adults, in one sense, with more realistic reading about children than they could find in most books addressed to adults. But also, conversely, it enables the children who read it to do something much more mature than they realize. For the whole book is a character study of Oswald, an unconsciously satiric self-portrait, which every intelligent child can fully appreciate: but no child would sit down to read a character study in any other form. There is another way in which children’s stories mediate this psychological interest, but I will reserve that for later treatment.\\n\\nIn this short glance at the Bastable trilogy I think we have stumbled on a principle. Where the children’s story is simply the right form for what the author has to say, then of course readers who want to hear that, will read the story or re-read it, at any age. I never met The Wind in the Willows or the Bastable books till I was in my late twenties, and I do not think I have enjoyed them any the less on that account. I am almost inclined to set it up as a canon that a children’s story which is enjoyed only by children is a bad children’s story. The good ones last. A waltz which you can like only when you are waltzing is a bad waltz.\\n\\nThis canon seems to me most obviously true of that particular type of children’s story which is dearest to my own taste, the fantasy or fairy tale. Now the modern critical world uses ‘adult’ as a term of approval. It is hostile to what it calls ‘nostalgia’ and contemptuous of what it calls ‘Peter Pantheism’. Hence a man who admits that dwarfs and giants and talking beasts and witches are still dear to him in his fifty-third year is now less likely to be praised for his perennial youth than scorned and pitied for arrested development. If I spend some little time defending myself against these charges, this is not so much because it matters greatly whether I am scorned and pitied as because the defence is germane to my whole view of the fairy tale and even of literature in general. My defence consists of three propositions.\\n\\n1. I reply with a tu quoque. Critics who treat adult as a term of approval, instead of as a merely descriptive term, cannot be adult themselves. To be concerned about being grown up, to admire the grown up because it is grown up, to blush at the suspicion of being childish; these things are the marks of childhood and adolescence. And in childhood and adolescence they are, in moderation, healthy symptoms. Young things ought to want to grow. But the on into middle life or even into early manhood this concern about being adult is a mark of really arrested development: When I was ten I read fairy tales in secret and would have been ashamed if I had been found doing so. Now that I am fifty I read them openly. When I became a man I put away childish things, including the fear of childishness and the desire to be very grown up.\\n\\n2. The modern view seems to me to involve a false conception of growth. They accuse us of arrested development because we have not lost a taste we had in childhood. But surely arrested development consists not in refusing to lose old things but in failing to add new things? I now like hock, which I am sure I should not have liked as a child. But I still like lemon-squash. I call this growth or development because I have been enriched: where I formerly had only one pleasure, I now have two. But if I had to lose the taste for lemon-squash before I acquired the taste for hock, that would not be growth but simple change. I now enjoy Tolstoy and Jane Austen and Trollope as well as fairy tales and I call that growth: if I had had to lose the fairy tales in order to acquire the novelists, I would not say that I had grown but only that I had changed. A tree grows because it adds rings: a train doesn’t grow by leaving one station behind and puffing on to the next. In reality, the case is stronger and more complicated than this. I think my growth is just as apparent when I now read the fairy tales as when I read the novelists, for I now enjoy the fairy tales better than I did in childhood: being now able to put more in, of course I get more out. But I do not here stress that point. Even if it were merely a taste for grown-up literature added to an unchanged taste for children’s literature, addition would still be entitled to the name ‘growth’, and the process of merely dropping one parcel when you pick up another would not. It is, of course, true that the process of growing does, incidentally and unfortunately, involve some more losses. But that is not the essence of growth, certainly not what makes growth admirable or desirable. If it were, if to drop parcels and to leave stations behind were the essence and virtue of growth, why should we stop at the adult? Why should not senile be equally a term of approval? Why are we not to be congratulated on losing our teeth and air? Some critics seem to confuse growth with the cost of growth and also to wish to make that cost far higher than, in nature, it need be.\\n\\n3. The whole association of fairy tale and fantasy with childhood is local and accidental. I hope everyone has read Tolkien’s essay on Fairy Tales, which is perhaps the most important contribution to the subject that anyone has yet made. If so, you will know already that, in most places and times, the fairy tale has not been specially made for, nor exclusively enjoyed by, children. It has gravitated to the nursery when it became unfashionable in literary circles, just as unfashionable furniture gravitated to the nursery in Victorian houses. In fact, many children do not like this kind of book, just as many children do not like horsehair sofas: and many adults do like it, just as many adults like rocking chairs. And those who do like it, whether young or old, probably like it for the same reason. And none of us can say with any certainty what that reason is. The two theories which are most often in my mind are those of Tolkien and of Jung.\\n\\nAccording to Tolkien1 the appeal of the fairy story lies in the fact that man there most fully exercises his function as a ‘subcreator’; not, as they love to say now, making a ‘comment upon life’ but making, so far as possible, a subordinate world of his own. Since, in Tolkien’s view, this is one of man’s proper functions, delight naturally arises whenever it is successfully performed. For Jung, fairy tale liberates Archetypes which dwell in the collective unconscious, and when we read a good fairy tale we are obeying the old precept ‘Know thyself’. I would venture to add to this my own theory, not indeed of the Kind as a whole, but of one feature in it: I mean, the presence of beings other than human which yet behave, in varying degrees, humanly: the giants and dwarfs and talking beasts. I believe these to be at least (for they may have many other sources of power and beauty) an admirable hieroglyphic which conveys psychology, types of character, more briefly than novelistic presentation and to readers whom novelistic presentation could not yet reach. Consider Mr Badger in The Wind in the Willows—that extraordinary amalgam of high rank, coarse manners, gruffness, shyness, and goodness. The child who has once met Mr Badger has ever afterwards, in its bones, a knowledge of humanity and of English social history which it could not get in any other way.\\n\\nOf course as all children’s literature is not fantastic, so all fantastic books need not be children’s books. It is still possible, even in an age so ferociously anti-romantic as our own, to write fantastic stories for adults: though you will usually need to have made a name in some more fashionable kind of literature before anyone will publish them. But there may be an author who at a particular moment finds not only fantasy but fantasy-for-children the exactly right form for what he wants to say. The distinction is a fine one. His fantasies for children and his fantasies for adults will have very much more in common with one another than either has with the ordinary novel , or with what is sometimes called ‘the novel of child life’. Indeed the same readers will probably read both his fantastic ‘juveniles’ and his fantastic stories for adults. For I need not remind such an audience as this that the neat sorting-out of books into age-groups, so dear to publishers, has only a very sketchy relation with the habits of any real readers. Those of us who are blamed when old for reading childish books were blamed when children for reading books too old for us. No reader worth his salt trots along in obedience to a time-table. The distinction, then, is a fine one: and I am not quite sure what made me, in a particular year of my life, feel that not only a fairy tale, but a fairy tale addressed to children, was exactly what I must write—or burst. Partly, I think, that this form permits, or compels you to leave out things I wanted to leave out. It compels you to throw all the force of the book into what was done and said. It checks what a kind, but discerning critic called ‘the expository demon’ in me. It also imposes certain very fruitful necessities about length.\\n\\nIf I have allowed the fantastic type of children’s story to run away with this discussion, that is because it is the kind I know and love best, not because I wish to condemn any other. But the patrons of the other kinds very frequently want to condemn it. About once every hundred years some wiseacre gets up and tries to banish the fairy tale. Perhaps I had better say a few words in its defence, as reading for children.\\n\\nIt is accused of giving children a false impression of the world they live in But I think no literature that children could read gives them less of a false impression. I think what profess to be realistic stories for children are far more likely to deceive them. I never expected the real world to be like the fairy tales. I think that I did expect school to be like the school stories. The fantasies did not deceive me: the school stories did. All stories in which children have adventures and successes which are possible, in the sense that they do not break the laws of nature, but almost infinitely improbable, are in more danger than the fairy tales of raising false expectations.\\n\\nAlmost the same answer serves for the popular image of escapism, though here the question is not so simple. Do fairy tales teach children to retreat into a world of wish-fulfilment ‘fantasy’ in the technical psychological sense of the word—instead of facing the problems of the real world? Now it is here that the problem becomes subtle. Let us again lay the fairy tale side by side with the school story or any other story which is labelled a ‘Boy’s Book’ or a ‘Girl’s Book’, as distinct from a `Children’s Book’. There is no doubt that both arouse, and imaginatively satisfy, wishes. We long to go through the looking glass, to reach fairy land. We also long to be the immensely popular and successful schoolboy or schoolgirl, or the lucky boy or girl who discovers the spy’s plot or rides the horse that none of the cowboys can manage. But the two longings are very different. The second, especially when directed on something so close as school life, is ravenous and deadly serious. Its fulfilment on the level of imagination is in very truth compensatory: we run to it from the disappointments and humiliations of the real world: it sends us back to the real world undivinely discontented. For it is all flattery to the ego. The pleasure consists in picturing oneself the object of admiration. The other longing, that for fairy land, is very different. In a sense a child does not long for fairy land as a boy longs to be the hero of the first eleven. Does anyone suppose that he really and prosaically longs for all the dangers and discomforts of a fairy tale?—really wants dragons in contemporary England? It is not so. It would be much truer to say that fairy land arouses a longing for he knows not what. It stirs and troubles him (to his life-long enrichment) with the dim sense of something beyond his reach and, far from dulling or emptying the actual world, gives it a new dimension of depth. He does not despise real woods because he has read of enchanted woods: the reading makes all real woods a little enchanted. This is a special kind of longing. The boy reading the school story of the type I have in mind desires success and is unhappy (once the book is over) because he can’t get it: the boy reading the fairy tale desires and is happy in the very fact of desiring. For his mind has not been concentrated on himself, as it often is in the more realistic story.\\n\\nI do not mean that school stories for boys and girls ought not to be written. I am only saying that they are far more liable to become ‘fantasies’ in the clinical sense than fantastic stories are. And this distinction holds for adult reading too. The dangerous fantasy is always superficially realistic. The real victim of wishful reverie does not batten on the Odyssey, The Tempest, or The Worm Ouroboros: he (or she) prefers stories about millionaires, irresistible beauties, posh hotels, palm beaches and bedroom scenes—things that really might happen, that ought to happen, that would have happened if the reader had had a fair chance. For, as I say, there are two kinds of I longing. The one is an askesis, a spiritual exercise, and the other is a disease.\\n\\nA far more serious attack on the fairy tale as children’s literature comes from those who do not wish children to be frightened. I suffered too much from night-fears myself in childhood to undervalue this objection. I would not wish to heat the fires of that private hell for any child. On the other hand, none of my fears came from fairy tales. Giant insects were my specialty, with ghosts a bad second. I suppose the ghosts came directly or indirectly from stories, though certainly not from fairy stories, but I don’t think the insects did. I don’t know anything my parents could have done or left undone which would have saved me from the pincers, mandibles, and eyes of those many-legged abominations. And that, as so many people have pointed out, is the difficulty. We do not know what will or will not frighten a child in this particular way. I say ‘in this particular way’ for we must here make a distinction. Those who say that children must not be frightened may mean two things. They may mean (1) that we must not do anything likely to give the child those haunting, disabling, pathological fears against which ordinary courage is helpless: in fact, phobias. His mind must, if possible, be kept clear of things he can’t bear to think of. Or they may mean (2) that we must try to keep out of his mind the knowledge that he is born into a world of death, violence, wounds, adventure, heroism and cowardice, good and evil. If they mean the first I agree with them: but not if they mean the second. The second would indeed be to give children a false impression and feed them on escapism in the bad sense. There is something ludicrous in the idea of so educating a generation which is born to the Ogpu and the atomic bomb. Since it is so likely that they will meet cruel enemies, let them at least have heard of brave knights and heroic courage. Otherwise you are making their destiny not brighter but darker. Nor do most of us find that violence and bloodshed, in a story, produce any haunting dread in the minds of children. As far as that goes, I side impenitently with the human race against the modern reformer. Let there be wicked kings and beheadings, battles and dungeons, giants and dragons, and let villains be soundly killed at the end the book. Nothing will persuade me that this causes an ordinary child any kind or degree of fear beyond what it wants, and needs, to feel. For, of course, it wants to be a little frightened.\\n\\nThe other fears—the phobias—are a different matter. I do not believe one can control them by literary means. We seem to bring them into the world with us ready made. No doubt the particular image on which the child’s terror is fixed can sometimes be traced to a book. But is that the source, or only the occasion, of the fear If he had been spared that image, would not some other, quite unpredictable by you, have had the same effect? Chesterton has told us of a boy who was more afraid of the Albert Memorial than anything else in the world. I know a man whose great childhood terror was the India paper edition of the Encyclopaedia Britannica—for a reason I defy you to guess. And I think it possible that by confining your child to blameless stories of child life in which nothing at all alarming ever happens, you would fail to banish the terrors, and would succeed in banishing all that can ennoble them or make them endurable. For in the fairy tales, side by side with the terrible figures, we find the immemorial comforters and protectors, the radiant ones; and the terrible figures are not merely terrible, but sublime. It would be nice if no little boy in bed, hearing, or thinking he hears, a sound, were ever at all frightened. But if he is going to be frightened, I think it better that he should think of giants and dragons than merely of burglars. And I think St George, or any bright champion in armour, is a better comfort than the idea of the police.\\n\\nI will even go further. If I could have escaped all my own night-fears at the price of never having known ‘faerie’, would I now be the gainer by that bargain? I am not speaking carelessly. The fears were very bad. But I think the price would have been too high.\\n\\nBut I have strayed far from my theme. This has been inevitable for, of the three methods, I know by experience only the third. I hope my title did not lead anyone to think that I was conceited enough to give you advice on how to write a story for children. There were two very good reasons for not doing that. One is that many people have written very much better stories than I, and I would rather learn about the art than set up to teach it. The other is that, in a certain sense, I have never exactly ‘made’ a story. With me the process is much more like bird-watching than like either talking or building. I see pictures. Some of these pictures have a common flavour, almost a common smell, which groups them together. Keep quiet and watch and they will begin joining themselves up. If you were very lucky (I have never been as lucky as all that) a whole set might join themselves so consistently that there you had a complete story: without doing anything yourself. But more often (in my experience always) there are gaps. Then at last you have to do some deliberate inventing, have to contrive reasons why these characters should be in these various places doing these various things. I have no idea whether this is the usual way or writing stories, still less whether it is the best. It is the only one I know: images always come first.\\n\\nBefore closing, I would like to return to what I said at the beginning. I rejected any approach which begins with the question ‘What do modern children like?’ I might be asked, ‘Do you equally reject the approach which begins with the question “What do modern children need?”—in other words, with the moral or didactic approach?’ I think the answer is Yes. Not because I don’t like stories to have a moral: certainly not because I think children dislike a moral. Rather because I feel sure that the question ‘What do modern children need?’ will not lead you to a good moral. If we ask that question we are assuming too superior an attitude. It would be better to ask ‘What moral do I need?’ for I think we can be sure that what does not concern us deeply will not deeply interest our readers, whatever their age. But it is better not to ask the question at all. Let the pictures tell you their own moral. For the moral inherent in them will rise from whatever spiritual roots you have succeeded in striking during the whole course of your life. But if they don’t show you any moral, don’t put one in. For the moral you put in is likely to be a platitude, or even a falsehood, skimmed from the surface of your consciousness. It is impertinent to offer the children that. For we have been told on high authority that in the moral sphere they are probably at least as wise as we. Anyone who can write a children’s story without a moral, had better do so: that is, if he is going to write children’s stories at all. The only moral that is of any value is that which arises inevitably from the whole cast of the author’s mind.\\n\\nIndeed everything in the story should arise from the whole cast of the author’s mind. We must write for children out of those elements in our own imagination which we share with children: differing from our child readers not by any less, or less serious, interest in the things we handle, but by the fact that we have other interests which children would not share with us. The matter of our story should be a part of the habitual furniture of our minds. This, I fancy, has been so with all great writers for children, but it is not generally understood. A critic not long ago said in praise of a very serious fairy tale that the author’s tongue ‘never once got into his cheek’. But why on earth should it?—unless he had been eating a seed-cake. Nothing seems to me more fatal, for this art, than an idea that whatever we share with children is, in the privative sense, ‘childish’ and that whatever is childish is somehow comic. We must meet children as equals in that area of our nature where we are their equals. Our superiority consists partly in commanding other areas, and partly (which is more relevant) in the fact that we are better at telling stories than they are. The child as reader is neither to be patronized nor idolized: we talk to him as man to man. But the worst attitude of all would be the professional attitude which regards children in the lump as a sort of raw material which we have to handle. We must of course try to do them no harm: we may, under the Omnipotence, sometimes dare to hope that we may do them good. But only such good as involves treating them with respect. We must not imagine that we are Providence or Destiny. I will not say that a good story for children could never be written by someone in the Ministry of Education, for all things are possible. But I should lay very long odds against it.\\n\\nOnce in a hotel dining-room I said, rather too loudly, ‘I loathe prunes: ‘So do I,’ came an unexpected six-year-old voice from another table. Sympathy was instantaneous. Neither of us thought it funny. We both knew that prunes are far too nasty to be funny. That is the proper meeting between man and child as independent personalities. Of the far higher and more difficult relations between child and parent or child and teacher, I say nothing. An author, as a mere author, is outside all that. He is not even an uncle. He is a freeman and an equal, like the postman, the butcher, and the dog next door."
+    }, {
+      "id": "a524d52b-013b-4c0c-999b-6c68cfe7dc72",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5a640cb-6840-4ced-ab58-8df75a59f9b2",
+    "name": "Load New Hire page - Enter fields maxed out - 2000 chars",
+    "commands": [{
+      "id": "2c2d62f1-92d3-4abd-9799-e962895e7c28",
+      "comment": "",
+      "command": "open",
+      "target": "/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66a0b935-0784-4e42-bdc3-fb71120bf0e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "614c2bea-1440-41e1-b158-97843ee21f7e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$AUoJiaU9$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$AUoJiaU9$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormk2bhGG69']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "732c97cb-d532-43b6-a2e1-0f7e41748cc1",
+      "comment": "Enter Name with 271 characters (testing beyond 255 characters)",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$eKNPZfl0$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$eKNPZfl0$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "abcdefghijklmnopqrstuvwxyz1abcdefghijklmnopqrstuvwxyz2abcdefghijklmnopqrstuvwxyz3abcdefghijklmnopqrstuvwxyz4abcdefghijklmnopqrstuvwxyz5abcdefghijklmnopqrstuvwxyz6abcdefghijklmnopqrstuvwxyz7abcdefghijklmnopqrstuvwxyz8 abcdefghijklmnopqrstuvwxyz9 abcdefghijklmnopqrstuvwxyz10"
+    }, {
+      "id": "51747a28-3d38-4252-b5e4-ee6a7c56f207",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e12c4413-19c5-4f5a-a809-28b7662e902a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "08641eac-9381-4ec3-bff4-95b5a0d20177",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d524a55-54a2-4357-8b10-9400b68d9d10",
+      "comment": "2,000+ words test",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$dAmgsKnq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormKMaSckt4']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I think there are three ways in which those who write for children may approach their work; two good ways and one that is generally a bad way.\\nI came to know of the bad way quite recently and from two unconscious witnesses. One was a lady who sent me the MS of a story she had written in which a fairy placed at a child’s disposal a wonderful gadget. I say ‘gadget’ because it was not a magic ring or hat or cloak or any such traditional matter. It was a machine, a thing of taps and handles and buttons you could press. You could press one and get an ice cream, another and get a live puppy, and so forth. I had to tell the author honestly that I didn’t much care for that sort of thing. She replied, ‘No more do I, it bores me to distraction. But it is what the modern child wants.’ My other bit of evidence was this. In my own first story I had described at length what I thought a rather fine high tea given by a hospitable faun to the little girl who was my heroine. A man, who has children of his own, said, ‘Ah, I see how you got to that. If you want to please grown-up readers you give them sex, so you thought to yourself, “That won’t do for children, what shall I give them instead? I know! The little blighters like plenty of good eating.” In reality, however, I myself like eating and drinking. I put in what I would have liked to read when I was a child and what I still like reading now that I am in my fifties.\\nThe lady in my first example, and the married man in my second, both conceived writing for children as a special department of ‘giving the public what it wants’. Children are, of course, a special public and you find out what they want and give them that, however little you like it yourself.\\nThe next way may seem at first to be very much the same, but I think the resemblance is superficial. This is the way of Lewis Carroll, Kenneth Graham; and Tolkien. The printed story grows out of a story told to a particular child with the living voice and perhaps ex tempore. It resembles the first way because you are certainly trying to give that child what it wants. But then you are dealing with a concrete person, this child who, of course, differs from all other children. There is no question of ‘children’ conceived as a strange species whose habits you have ‘made up’ like an anthropologist or a commercial traveller. Nor, I suspect, would it be possible, thus face to face, to regale the child with things calculated to please it but regarded by yourself with indifference or contempt. The child, I am certain, would see through that. In any personal relation the two participants modify each other. You would become slightly different because you were talking to a child and the child would become slightly different because it was being talked to by an adult. A community, a composite personality, is created and out of that the story grows.\\nThe third way, which is the only one I could ever use myself, consists in writing a children’s story because a children’s story is the best art-form for something you have to say: just as a composer might write a Dead March not because there was a public funeral in view but because certain musical ideas that had occurred to him went best into that form. This method could apply to other kinds of children’s literature besides stories. I have been told that Arthur Mee never met a child and never wished to: it was, from his point of view, a bit of luck that boys liked reading what he liked writing. This anecdote may be untrue in fact but it illustrates my meaning.\\nWithin the species ‘children’s story’ the sub-species which happened to suit me is the fantasy or (in a loose sense of that word) the fairy tale. There are, of course, other sub-species. E. Nesbit’s trilogy about the Bastable family is a very good specimen of another kind. It is .a ‘children’s story’ in the sense that children can and do read it: but it is also the only form in which E. Nesbit could have given us so much of the humours of childhood. It is true that the Bastable children appear, successfully treated from the adult point of view, in one of her grown-up novels, but they appear only for a moment. I do not think she would have kept it up. Sentimentality is so apt to creep in if we write at length about children as seen by their elders. And the reality of childhood, as we all experienced it, creeps out. For we all remember that our childhood, as lived, was immeasurably different from what our elders saw. Hence Sir Michael Sadler, when I asked his opinion about a certain new experimental school, replied, ‘I never give an opinion on any of those experiments till the children have grown up and can tell us what really happened.’ Thus the Bastable trilogy, however improbable many of its episodes may be, provides even adults, in one sense, with more realistic reading about children than they could find in most books addressed to adults. But also, conversely, it enables the children who read it to do something much more mature than they realize. For the whole book is a character study of Oswald, an unconsciously satiric self-portrait, which every intelligent child can fully appreciate: but no child would sit down to read a character study in any other form. There is another way in which children’s stories mediate this psychological interest, but I will reserve that for later treatment.\\nIn this short glance at the Bastable trilogy I think we have stumbled on a principle. Where the children’s story is simply the right form for what the author has to say, then of course readers who want to hear that, will read the story or re-read it, at any age. I never met The Wind in the Willows or the Bastable books till I was in my late twenties, and I do not think I have enjoyed them any the less on that account. I am almost inclined to set it up as a canon that a children’s story which is enjoyed only by children is a bad children’s story. The good ones last. A waltz which you can like only when you are waltzing is a bad waltz.\\nThis canon seems to me most obviously true of that particular type of children’s story which is dearest to my own taste, the fantasy or fairy tale. Now the modern critical world uses ‘adult’ as a term of approval. It is hostile to what it calls ‘nostalgia’ and contemptuous of what it calls ‘Peter Pantheism’. Hence a man who admits that dwarfs and giants and talking beasts and witches are still dear to him in his fifty-third year is now less likely to be praised for his perennial youth than scorned and pitied for arrested development. If I spend some little time defending myself against these charges, this is not so much because it matters greatly whether I am scorned and pitied as because the defence is germane to my whole view of the fairy tale and even of literature in general. My defence consists of three propositions.\\n1. I reply with a tu quoque. Critics who treat adult as a term of approval, instead of as a merely descriptive term, cannot be adult themselves. To be concerned about being grown up, to admire the grown up because it is grown up, to blush at the suspicion of being childish; these things are the marks of childhood and adolescence. And in childhood and adolescence they are, in moderation, healthy symptoms. Young things ought to want to grow. But the on into middle life or even into early manhood this concern about being adult is a mark of really arrested development: When I was ten I read fairy tales in secret and would have been ashamed if I had been found doing so. Now that I am fifty I read them openly. When I became a man I put away childish things, including the fear of childishness and the desire to be very grown up.\\n2. The modern view seems to me to involve a false conception of growth. They accuse us of arrested development because we have not lost a taste we had in childhood. But surely arrested development consists not in refusing to lose old things but in failing to add new things? I now like hock, which I am sure I should not have liked as a child. But I still like lemon-squash. I call this growth or development because I have been enriched: where I formerly had only one pleasure, I now have two. But if I had to lose the taste for lemon-squash before I acquired the taste for hock, that would not be growth but simple change. I now enjoy Tolstoy and Jane Austen and Trollope as well as fairy tales and I call that growth: if I had had to lose the fairy tales in order to acquire the novelists, I would not say that I had grown but only that I had changed. A tree grows because it adds rings: a train doesn’t grow by leaving one station behind and puffing on to the next. In reality, the case is stronger and more complicated than this. I think my growth is just as apparent when I now read the fairy tales as when I read the novelists, for I now enjoy the fairy tales better than I did in childhood: being now able to put more in, of course I get more out. But I do not here stress that point. Even if it were merely a taste for grown-up literature added to an unchanged taste for children’s literature, addition would still be entitled to the name ‘growth’, and the process of merely dropping one parcel when you pick up another would not. It is, of course, true that the process of growing does, incidentally and unfortunately, involve some more losses. But that is not the essence of growth, certainly not what makes growth admirable or desirable. If it were, if to drop parcels and to leave stations behind were the essence and virtue of growth, why should we stop at the adult? Why should not senile be equally a term of approval? Why are we not to be congratulated on losing our teeth and air? Some critics seem to confuse growth with the cost of growth and also to wish to make that cost far higher than, in nature, it need be.\\n3. The whole association of fairy tale and fantasy with childhood is local and accidental. I hope everyone has read Tolkien’s essay on Fairy Tales, which is perhaps the most important contribution to the subject that anyone has yet made. If so, you will know already that, in most places and times, the fairy tale has not been specially made for, nor exclusively enjoyed by, children. It has gravitated to the nursery when it became unfashionable in literary circles, just as unfashionable furniture gravitated to the nursery in Victorian houses. In fact, many children do not like this kind of book, just as many children do not like horsehair sofas: and many adults do like it, just as many adults like rocking \\n"
+    }, {
+      "id": "39203e0d-422e-4e67-aeb8-fdd705408a76",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8859deb6-6086-4016-b63d-858f7661e571",
+    "name": "Load New Hire page - Enter details (Normal) - switch from Eng to Port",
+    "commands": [{
+      "id": "f09150a3-e357-4f3f-98c8-45c0fdde497a",
+      "comment": "",
+      "command": "open",
+      "target": "/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b4b5dfb-f68f-472b-9c75-38874b720485",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ceef3b2-3ea2-4e56-ab40-670a89c5f487",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [],
+      "value": "Jenny Lyn O. Ngo Gui - testing"
+    }, {
+      "id": "e78ba992-1e3e-4441-9439-3680431ac9fa",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jenny Lyn O. Ngo Gui - testing"
+    }, {
+      "id": "8f22a9cd-2c46-4afa-85b3-3262b7a77bdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8a8ced3-13c9-414c-b157-11a8511c7b03",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "f4d99ed6-6a0d-4670-9f7b-2afbcd45524d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here"
+    }, {
+      "id": "f52b2db2-3426-457a-a0d8-f552ffd8f533",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4bde029-552d-4a33-8bc3-2278990bd490",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here - testing normal case"
+    }, {
+      "id": "66ef77cc-320c-47c6-99c9-e6a58b57b501",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fefbbc2-6ca9-4a51-8ca1-1974f9e7e32c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c5fcd6-2f0d-4b94-8516-2dbd54d0b072",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c81b024-69a2-4cde-91a2-b85a7df0295f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.taglib-text-icon",
+      "targets": [
+        ["css=.taglib-text-icon", "css:finder"],
+        ["xpath=//a[@id='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_kldx______menu__portugues_2d_brasil__1']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'português-Brasil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fbc5312-0726-4ff4-b354-828d3ed0af27",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$LvylnoC1$0$$pt_BR", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$LvylnoC1$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Juana Felicia"
+    }, {
+      "id": "07bbf2a2-b930-42a3-af5f-58a43d1b2198",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc045e0-fe59-47b6-aee0-d593961c16ee",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormSAO4WVqp']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "13/12/1984"
+    }, {
+      "id": "77641d5b-09ce-4080-8c34-ab73cb65d224",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2671aaf-affc-49fd-8732-8f2897325d00",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Mi habla portuges"
+    }, {
+      "id": "bb4f2790-4fff-4ec8-a56b-f271402d86d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8411b59b-03e8-4b17-ab4b-7a1ee937ee6b",
+    "name": "Load New Hire page - Enter details (Normal) - switch from Eng to Port (1)",
+    "commands": [{
+      "id": "3115d63b-1e01-48a7-a5ee-78aca4fcba1d",
+      "comment": "",
+      "command": "open",
+      "target": "/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf0f8c93-7dfd-4f5a-a1bb-88939621359a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71e6f625-ce8e-40f7-a3b6-d4ef46caed23",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [],
+      "value": "Jenny Lyn O. Ngo Gui - testing"
+    }, {
+      "id": "8b4dfe92-9de6-4ed3-93e9-419c9e484658",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$Eohs3wAN$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jenny Lyn O. Ngo Gui - testing"
+    }, {
+      "id": "d0a25712-5084-4aa6-8667-e053ed6e405e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cee4eab-8dc6-4c81-acae-e2708cd5a219",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/13/1984"
+    }, {
+      "id": "38caeb17-066f-4a01-8d19-6c792cc4d6ef",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here"
+    }, {
+      "id": "8c2a4afd-06a5-4c2d-a0e9-c85836cc9484",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23825811-dbe0-413c-8e50-4b75ac404340",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$1TeznRXq$0$$en_US']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Indicate reason here - testing normal case"
+    }, {
+      "id": "256c118e-32c9-4b83-b30a-ccbc240f7b1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac24aeba-84d5-43e4-8a79-86fb266c8c84",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4360d6-9e50-429e-9866-6e845d16514c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.lexicon-icon-en-us > use",
+      "targets": [
+        ["css=.lexicon-icon-en-us > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d205321-fd7a-4f21-af17-3d41bdaef2c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.taglib-text-icon",
+      "targets": [
+        ["css=.taglib-text-icon", "css:finder"],
+        ["xpath=//a[@id='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_kldx______menu__portugues_2d_brasil__1']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'português-Brasil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cce939c-70db-4c7a-a200-1517678a5ba6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[contains(@name,'WhatIsYourName')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$LvylnoC1$0$$pt_BR", "name"],
+        ["css=.col-md-7 .form-control", "css:finder"],
+        ["xpath=//input[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhatIsYourName$LvylnoC1$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Juana Felicia"
+    }, {
+      "id": "8e1f0bac-8a3c-4283-bb31-9d7d25173aa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "920a86f1-8f4a-4b54-a1aa-fdc0dc4be1f8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "12/15/1984"
+    }, {
+      "id": "b6e7a813-3731-452c-95e1-4e0775806b80",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "595ea2da-bd8e-437a-a6ff-280272eeba26",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea[contains(@name,'WhyDidYouJoinTheTestingArea')]",
+      "targets": [
+        ["name=_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR", "name"],
+        ["css=.col-md-12 > .ddm-field-container .ddm-field-text", "css:finder"],
+        ["xpath=//textarea[@name='_com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_ddm$$WhyDidYouJoinTheTestingArea$ODECRwla$0$$pt_BR']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormJ7SH7Tw2']/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Mi habla portuges"
+    }, {
+      "id": "6cbf861f-fdbd-4ac1-9c51-d6950ddef8f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2f45423b-aae0-4f1c-b710-eb8f199cb792",
+    "name": "Test Date of Birth - Invalid date - within range but invalid date",
+    "commands": [{
+      "id": "c995e884-efe3-4705-b300-c9827f53dab7",
+      "comment": "",
+      "command": "open",
+      "target": "https://forms.liferay.com/web/forms/shared/-/form/122548",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3f614b6-debf-4f29-ad10-2f4b4983a48e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "833x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cd65ebb-11a8-4248-ac52-b1679b31caeb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2bf0e5b-b200-4d57-9bc1-2f8959a7f5fa",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='1_/__/____'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "1_/__/____"
+    }, {
+      "id": "7a8dba50-7684-478b-a061-00cb38e9570c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input[2]",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='1_/__/____'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormwnPNHvXm']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "02/29/2021"
+    }, {
+      "id": "1e58248d-1371-4129-8a92-3129e9aae428",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-5",
+      "targets": [
+        ["css=.col-md-5", "css:finder"],
+        ["xpath=//div[@id='ddmFormCSgv3mjd']/div/div/div/div/div/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cdce65f-5b9d-4fa5-bfd9-303671b3b493",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-group-inset",
+      "targets": [
+        ["css=.input-group-inset", "css:finder"],
+        ["xpath=(//input[@value='12/13/1984'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormCSgv3mjd']/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef3bdb0-f1b2-4ea4-a5ab-bbb620dfd954",
+      "comment": "",
+      "command": "click",
+      "target": "id=ddm-form-submit",
+      "targets": [
+        ["id=ddm-form-submit", "id"],
+        ["css=#ddm-form-submit", "css:finder"],
+        ["xpath=//button[@id='ddm-form-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='ddmFormkFiQWdD1']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b16b5623-365c-4474-9f2e-04b86b896d3d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5674d4a3-fc84-4065-97bd-d6aedf2d8ecb"]
+  }, {
+    "id": "fcb1c8ff-933d-4876-8ce5-024a78889c14",
+    "name": "Liferay QA Test",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9a5ba7ad-76ef-4c93-9404-f2e0f63b4694", "8859deb6-6086-4016-b63d-858f7661e571", "8411b59b-03e8-4b17-ab4b-7a1ee937ee6b", "b5a640cb-6840-4ced-ab58-8df75a59f9b2", "a76bebd7-4e0a-4898-9022-212728082fdb", "5674d4a3-fc84-4065-97bd-d6aedf2d8ecb", "2f45423b-aae0-4f1c-b710-eb8f199cb792"]
+  }],
+  "urls": ["https://forms.liferay.com/", "https://forms.liferay.com/web/forms/shared/-/form/122548"],
+  "plugins": []
+}
