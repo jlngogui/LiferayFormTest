@@ -1,0 +1,60 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Custom field (Begin Date),Custom field (Change completion date),Custom field (Change reason),Custom field (Change risk),Custom field (Change start date),Custom field (Change type),Custom field (Development),Custom field (End Date),Custom field (Epic Link),Custom field (Impact),Custom field (Inherent impact),Custom field (Inherent probability),Custom field (Inherent risk),Custom field (Issue color),Custom field (Rank),Custom field (Request Type),Custom field (Residual impact),Custom field (Residual probability),Custom field (Residual risk),Custom field (Revision),Custom field (Start date),Custom field (Story point estimate),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field ([CHART] Date of First Response),Status Category
+Different date of birthday format between English and Portuguese version,LO-18,10017,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,Medium,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 4:08 PM,20/May/21 4:08 PM,20/May/21 4:08 PM,,,0,"||Action||Data||Expected Result
+|Click Language icon… select Portuguese|-|Page switches to Portuguese version, with language reflected in the fields/descriptions
+|Enter Name, Date of Birth, Reason for Joining fields|-|Behavior should be consistent with English version
+
+Not clear in the specifications if the difference in English and Portuguese format is expected. To be checked including what is correct specifications for this.",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,,,,,,,,,{},,,,,,,,0|i0003r:,,,,,,,,,,,,To Do
+Dummy comments shown after Submit with validation errors,LO-17,10016,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,Medium,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 4:05 PM,20/May/21 4:05 PM,20/May/21 4:05 PM,,,0,"||Action||Data||Expected Result
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)
+Required field indicator clear?
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear
+No Date Picker as this is not appropriate for entering Date of Birth
+User should be able to easily enter and change date of birth entry
+Other usability considerations
+|Check ""Reason for joining"" field - usability|-|Multi-line input field?
+Most probable length of answer (average) considered in the sizing/display? 
+Required field indicator clear?
+|Check page overall, check if unnecessary elements or descriptions are present (ex. draft version, test comment)|-|There should be no dummy descriptions, and test comments in the page
+
+ !image-2021-05-21-01-05-36-427.png|thumbnail! ",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,,,,,,,,,{},,,,,,,,0|i0003j:,,,,,,,,,,,,To Do
+"Date of Birth field, Date Picker issues",LO-16,10015,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,High,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 4:03 PM,20/May/21 4:03 PM,20/May/21 4:03 PM,,,0,"||Action||Data||Expected Result
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)
+Required field indicator clear?
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear
+No Date Picker as this is not appropriate for entering Date of Birth
+User should be able to easily enter and change date of birth entry
+Other usability considerations
+
+Several issues with the Date of Birth field in relation to the Date Picker:
+- Date entered by user is not reflected on the Date Picker (Current Date, or last selected Date in Date Picker is shown instead)
+ !image-2021-05-21-01-00-36-810.png|thumbnail! 
+
+- Also, after LO-15 occurs, clicking on the Date Picker automatically changes the input to the previously selected Date from Date Picker(even if not yet selected from Date Picker), or previously entered Date. Current input is being overwritten
+
+If the Date Picker will be removed, these issues will be resolved since dependency on Date Picker will be cleared.",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,20/May/21 4:00 PM;ug:12d454bb-5cec-44c5-b94e-6a2153f05a8d;image-2021-05-21-01-00-36-810.png;https://jlngogui.atlassian.net/secure/attachment/10002/image-2021-05-21-01-00-36-810.png,,,,,,,,{},,,,,,,,0|i0003b:,,,,,,,,,,,,To Do
+"Date of Birth bug - cannot appropriately input after entering date, then Selecting entire text",LO-15,10014,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,Medium,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 3:54 PM,20/May/21 3:54 PM,20/May/21 3:57 PM,,,0,"||Action||Data||Expected Result
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)
+Required field indicator clear?
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear
+No Date Picker as this is not appropriate for entering Date of Birth
+User should be able to easily enter and change date of birth entry
+Other usability considerations
+
+After entering date, “Select All” text in date of birth field.
+ !image-2021-05-21-00-53-25-717.png|thumbnail! 
+
+The next time you type, for some reason the cursor goes right to the end of the text. And even if you put the text cursor to the unfilled (_) areas, it always goes right to the end of the text. The workaround is to delete the entire text and rewrite everything from left to right.
+ !image-2021-05-21-00-53-37-469.png|thumbnail! 
+
+Expected: typing into the Date of Birth field should still be smooth even after entering date and Selecting entire text.",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,20/May/21 3:53 PM;ug:12d454bb-5cec-44c5-b94e-6a2153f05a8d;image-2021-05-21-00-53-25-717.png;https://jlngogui.atlassian.net/secure/attachment/10001/image-2021-05-21-00-53-25-717.png,20/May/21 3:53 PM;ug:12d454bb-5cec-44c5-b94e-6a2153f05a8d;image-2021-05-21-00-53-37-469.png;https://jlngogui.atlassian.net/secure/attachment/10000/image-2021-05-21-00-53-37-469.png,,,,,,,{},,,,,,,,0|i00033:,,,,,,,,,,,,To Do
+"Purpose of the page, and call to action is not clear",LO-14,10013,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,Medium,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 3:49 PM,20/May/21 3:49 PM,20/May/21 3:49 PM,,,0,"||Action||Data||Expected Result
+|Go to Liferay QA Team New Hire onboarding page: [https://forms.liferay.com/web/forms/shared/-/form/122548|https://forms.liferay.com/web/forms/shared/-/form/122548]|-|Page should be shown without errors, initially in English
+|Check the top portion of the page|-|Top portion of the page should show the page Title: Welcome to Liferay QA Team\!
+|Check the welcome message on top next to the top title|-|Next to the Title, welcome message should be shown: ""Welcome aboard\!""
+|Check description after the welcome message - call to action|-|Call to action should be clearly described: 
+""Please enter your details below so we can get to know you better""
+
+Make purpose and call to action clear by modifying either: Title and description, sub-description",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,,,,,,,,,{},,,,,,,,0|i0002v:,,,,,,,,,,,,To Do
+"Dummy Page Title, Description is used instead of the expected Title/Description",LO-13,10012,Bug,Backlog,LO,Liferay Onboarding,software,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,Medium,,,,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,20/May/21 3:48 PM,20/May/21 3:48 PM,20/May/21 3:48 PM,,,0,"||Action||Data||Expected Result
+|Go to Liferay QA Team New Hire onboarding page: [https://forms.liferay.com/web/forms/shared/-/form/122548|https://forms.liferay.com/web/forms/shared/-/form/122548]|-|Page should be shown without errors, initially in English
+|Check the top portion of the page|-|Top portion of the page should show the page Title: Welcome to Liferay QA Team\!",,Jenny Ngo Gui,5b595c11dfe79e2c947cdcdd,,,,,,,,,,,,,,,,,{},,,,,,,,0|i0002n:,,,,,,,,,,,,To Do

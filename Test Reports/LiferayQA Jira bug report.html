@@ -1,0 +1,1038 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="70">
+            <img src="https://jlngogui.atlassian.net/images/icon-jira-software-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="70">
+            <a href="https://jlngogui.atlassian.net/issues/?jql=issue+in+%2810013%2C10016%2C10014%2C10015%2C10012%2C10017%29">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="70">
+            Displaying <strong>6</strong> issues at <strong>20/May/21 4:39 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                                    <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                                <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-project" data-id="project">
+                            Project
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                            Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                            Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-creator" data-id="creator">
+                            Creator
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                            Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-lastViewed" data-id="lastViewed">
+                            Last Viewed
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                            Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolutiondate" data-id="resolutiondate">
+                            Resolved
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-versions" data-id="versions">
+                            Affects versions
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                            Fix versions
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-components" data-id="components">
+                            Components
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                            Due date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-votes" data-id="votes">
+                            Votes
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-watches" data-id="watches">
+                            Watchers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-thumbnail" data-id="thumbnail">
+                            Images
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeoriginalestimate" data-id="timeoriginalestimate">
+                            Original estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeestimate" data-id="timeestimate">
+                            Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timespent" data-id="timespent">
+                            Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-workratio" data-id="workratio">
+                            Work Ratio
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-subtasks" data-id="subtasks">
+                            Sub-tasks
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuelinks" data-id="issuelinks">
+                            Linked Issues
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-environment" data-id="environment">
+                            Environment
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                            Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-security" data-id="security">
+                            Security Level
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-progress" data-id="progress">
+                            Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregateprogress" data-id="aggregateprogress">
+                            Σ Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimespent" data-id="aggregatetimespent">
+                            Σ Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeestimate" data-id="aggregatetimeestimate">
+                            Σ Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeoriginalestimate" data-id="aggregatetimeoriginalestimate">
+                            Σ Original Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-labels" data-id="labels">
+                            Labels
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statuscategorychangedate" data-id="statuscategorychangedate">
+                            Status Category Changed
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statusCategory" data-id="statusCategory">
+                            Status Category
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-parent" data-id="parent">
+                            Parent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10003" data-id="customfield_10003">
+                            Approvers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10035" data-id="customfield_10035">
+                            Begin Date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10009" data-id="customfield_10009">
+                            Change completion date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10007" data-id="customfield_10007">
+                            Change reason
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10006" data-id="customfield_10006">
+                            Change risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10008" data-id="customfield_10008">
+                            Change start date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10005" data-id="customfield_10005">
+                            Change type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10036" data-id="customfield_10036">
+                            End Date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10014" data-id="customfield_10014">
+                            Epic Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10021" data-id="customfield_10021">
+                            Flagged
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10004" data-id="customfield_10004">
+                            Impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10028" data-id="customfield_10028">
+                            Inherent impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10030" data-id="customfield_10030">
+                            Inherent probability
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10032" data-id="customfield_10032">
+                            Inherent risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10017" data-id="customfield_10017">
+                            Issue color
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10002" data-id="customfield_10002">
+                            Organizations
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10018" data-id="customfield_10018">
+                            Parent Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10019" data-id="customfield_10019">
+                            Rank
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10010" data-id="customfield_10010">
+                            Request Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10029" data-id="customfield_10029">
+                            Residual impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10031" data-id="customfield_10031">
+                            Residual probability
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10033" data-id="customfield_10033">
+                            Residual risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10034" data-id="customfield_10034">
+                            Revision
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10020" data-id="customfield_10020">
+                            Sprint
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10015" data-id="customfield_10015">
+                            Start date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10016" data-id="customfield_10016">
+                            Story point estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10023" data-id="customfield_10023">
+                            Target end
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10022" data-id="customfield_10022">
+                            Target start
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10001" data-id="customfield_10001">
+                            Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10024" data-id="customfield_10024">
+                            [CHART] Date of First Response
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10000" data-id="customfield_10000">
+                            Development
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10017" rel="10017" data-issuekey="LO-18" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-18" href="https://jlngogui.atlassian.net/browse/LO-18">LO-18</a>
+</td>
+                                            <td class="summary"><p>
+                Different date of birthday format between English and Portuguese version
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 4:08 PM </td>
+                                            <td class="lastViewed"> 20/May/21 4:08 PM </td>
+                                            <td class="updated"> 20/May/21 4:08 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-9                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Click Language icon… select Portuguese|-|Page switches to Portuguese version, with language reflected in the fields/descriptions<br/>
+|Enter Name, Date of Birth, Reason for Joining fields|-|Behavior should be consistent with English version<br/>
+<br/>
+Not clear in the specifications if the difference in English and Portuguese format is expected. To be checked including what is correct specifications for this.
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 4:08 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i0003r:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10016" rel="10016" data-issuekey="LO-17" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-17" href="https://jlngogui.atlassian.net/browse/LO-17">LO-17</a>
+</td>
+                                            <td class="summary"><p>
+                Dummy comments shown after Submit with validation errors
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 4:05 PM </td>
+                                            <td class="lastViewed"> 20/May/21 4:05 PM </td>
+                                            <td class="updated"> 20/May/21 4:05 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-7                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)<br/>
+Required field indicator clear?<br/>
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear<br/>
+No Date Picker as this is not appropriate for entering Date of Birth<br/>
+User should be able to easily enter and change date of birth entry<br/>
+Other usability considerations<br/>
+|Check &quot;Reason for joining&quot; field - usability|-|Multi-line input field?<br/>
+Most probable length of answer (average) considered in the sizing/display? <br/>
+Required field indicator clear?<br/>
+|Check page overall, check if unnecessary elements or descriptions are present (ex. draft version, test comment)|-|There should be no dummy descriptions, and test comments in the page<br/>
+<br/>
+ !image-2021-05-21-01-05-36-427.png|thumbnail! 
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 4:05 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i0003j:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10015" rel="10015" data-issuekey="LO-16" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-16" href="https://jlngogui.atlassian.net/browse/LO-16">LO-16</a>
+</td>
+                                            <td class="summary"><p>
+                Date of Birth field, Date Picker issues
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 4:03 PM </td>
+                                            <td class="lastViewed"> 20/May/21 4:03 PM </td>
+                                            <td class="updated"> 20/May/21 4:03 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://jlngogui.atlassian.net/secure/attachment/10002/image-2021-05-21-01-00-36-810.png">
+            image-2021-05-21-01-00-36-810.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-7                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)<br/>
+Required field indicator clear?<br/>
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear<br/>
+No Date Picker as this is not appropriate for entering Date of Birth<br/>
+User should be able to easily enter and change date of birth entry<br/>
+Other usability considerations<br/>
+<br/>
+Several issues with the Date of Birth field in relation to the Date Picker:<br/>
+- Date entered by user is not reflected on the Date Picker (Current Date, or last selected Date in Date Picker is shown instead)<br/>
+ !image-2021-05-21-01-00-36-810.png|thumbnail! <br/>
+<br/>
+- Also, after LO-15 occurs, clicking on the Date Picker automatically changes the input to the previously selected Date from Date Picker(even if not yet selected from Date Picker), or previously entered Date. Current input is being overwritten<br/>
+<br/>
+If the Date Picker will be removed, these issues will be resolved since dependency on Date Picker will be cleared.
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 4:03 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i0003b:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10014" rel="10014" data-issuekey="LO-15" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-15" href="https://jlngogui.atlassian.net/browse/LO-15">LO-15</a>
+</td>
+                                            <td class="summary"><p>
+                Date of Birth bug - cannot appropriately input after entering date, then Selecting entire text
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 3:54 PM </td>
+                                            <td class="lastViewed"> 20/May/21 3:57 PM </td>
+                                            <td class="updated"> 20/May/21 3:54 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://jlngogui.atlassian.net/secure/attachment/10001/image-2021-05-21-00-53-25-717.png">
+            image-2021-05-21-00-53-25-717.png
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-7                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Check Name input field - usability|-|Format expected clear? (or if no specific format expected, this is also clear to the user)<br/>
+Required field indicator clear?<br/>
+|Check Date of Birth field - usability (exploratory testing)|-|Date format should be clear<br/>
+No Date Picker as this is not appropriate for entering Date of Birth<br/>
+User should be able to easily enter and change date of birth entry<br/>
+Other usability considerations<br/>
+<br/>
+After entering date, “Select All” text in date of birth field.<br/>
+ !image-2021-05-21-00-53-25-717.png|thumbnail! <br/>
+<br/>
+The next time you type, for some reason the cursor goes right to the end of the text. And even if you put the text cursor to the unfilled (_) areas, it always goes right to the end of the text. The workaround is to delete the entire text and rewrite everything from left to right.<br/>
+ !image-2021-05-21-00-53-37-469.png|thumbnail! <br/>
+<br/>
+Expected: typing into the Date of Birth field should still be smooth even after entering date and Selecting entire text.
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 3:54 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i00033:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10013" rel="10013" data-issuekey="LO-14" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-14" href="https://jlngogui.atlassian.net/browse/LO-14">LO-14</a>
+</td>
+                                            <td class="summary"><p>
+                Purpose of the page, and call to action is not clear
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 3:49 PM </td>
+                                            <td class="lastViewed"> 20/May/21 3:49 PM </td>
+                                            <td class="updated"> 20/May/21 3:49 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-2                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Go to Liferay QA Team New Hire onboarding page: [https://forms.liferay.com/web/forms/shared/-/form/122548|https://forms.liferay.com/web/forms/shared/-/form/122548]|-|Page should be shown without errors, initially in English<br/>
+|Check the top portion of the page|-|Top portion of the page should show the page Title: Welcome to Liferay QA Team\!<br/>
+|Check the welcome message on top next to the top title|-|Next to the Title, welcome message should be shown: &quot;Welcome aboard\!&quot;<br/>
+|Check description after the welcome message - call to action|-|Call to action should be clearly described: <br/>
+&quot;Please enter your details below so we can get to know you better&quot;<br/>
+<br/>
+Make purpose and call to action clear by modifying either: Title and description, sub-description
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 3:49 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i0002v:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10012" rel="10012" data-issuekey="LO-13" class="issuerow">
+                                            <td class="project">    Liferay Onboarding
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="LO-13" href="https://jlngogui.atlassian.net/browse/LO-13">LO-13</a>
+</td>
+                                            <td class="summary"><p>
+                Dummy Page Title, Description is used instead of the expected Title/Description
+    </p>
+</td>
+                                            <td class="issuetype">    Bug
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Backlog&lt;/span&gt;">Backlog</span>    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Jenny Ngo Gui
+    </td>
+                                            <td class="creator">            Jenny Ngo Gui
+    </td>
+                                            <td class="created"> 20/May/21 3:48 PM </td>
+                                            <td class="lastViewed"> 20/May/21 3:48 PM </td>
+                                            <td class="updated"> 20/May/21 3:48 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks">                                        LO-12,                                                LO-2                        </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      ||Action||Data||Expected Result<br/>
+|Go to Liferay QA Team New Hire onboarding page: [https://forms.liferay.com/web/forms/shared/-/form/122548|https://forms.liferay.com/web/forms/shared/-/form/122548]|-|Page should be shown without errors, initially in English<br/>
+|Check the top portion of the page|-|Top portion of the page should show the page Title: Welcome to Liferay QA Team\!
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels"></td>
+                                            <td class="statuscategorychangedate"> 20/May/21 3:48 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">To Do</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10035"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10036"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10032"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i0002n:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10031"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10034"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+                </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="70"><font size="1">
+        Generated at Thu May 20 16:39:13 UTC 2021 by Jenny Ngo Gui using Jira 1001.0.0-SNAPSHOT#100162-sha1:3b690427338e0fca72b1894e7cd9ac77330f94a1.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

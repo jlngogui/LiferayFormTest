@@ -1,16 +1,3 @@
-# LiferayFormTest
-
-This contains the deliverables for Liferay's QA Test
-
-Note: MyTest.java is not properly working - could not complete setting this up due to technical difficulties
-
-Test Plan/Strategy document:
-/Test Plan - Strategy/
-
-Automated test scripts - Selenium IDE:
-/src/main/SeleniumIDE
-/src/main/java/com/selenium/testbase - version exported to JUnit format
-
 Test Cases created in JIRA Xray, Test Run report here:
 https://jlngogui.atlassian.net/plugins/servlet/ac/com.xpandit.plugins.xray/testruns-list-report-page?project.key=LO&project.id=10000&ac.reportId=60a68a405e226600191a281e
 Linked defects and details can also be accessed here
